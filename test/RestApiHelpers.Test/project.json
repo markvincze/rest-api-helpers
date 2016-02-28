@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "xunit": "2.1.0",
+    "moq.netcore": "4.4.0-beta8",
+    "RestApiHelpers": ""
+  },
+
+  "commands": {
+    "test": "xunit.runner.dnx"
+  },
+
+  "frameworks": {
+    "dotnet5.4": { }
+  }
+}

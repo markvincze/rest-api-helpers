@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0.0",
+  "authors": [ "Mark Vincze" ],
+  "owners": [ "mark.vincze" ],
+  "tags": [ "ASP.NET", "REST" ],
+  "releaseNotes": "First release",
+  "copyright": "Copyright © Mark Vincze 2016",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+  "projectUrl": "https://github.com/markvincze/rest-api-helpers",
+  "description": "Collection of extensions for ASP.NET MVC helping implementing Rest Apis.",
+  "dependencies": {
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final"
+  },
+  "frameworks": {
+    "dotnet5.4": { }
+  }
+}
