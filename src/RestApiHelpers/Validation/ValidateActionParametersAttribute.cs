@@ -6,8 +6,20 @@ using System.Reflection;
 
 namespace RestApiHelpers.Validation
 {
+    /// <summary>
+    /// Validates all the validation attributes placed directly on action method parameters.
+    /// </summary>
+    /// <remarks>
+    /// The framework by default doesn't evaluate the validation attributes put directly on action method parameters. It only evaluates the attributes put on the properties of the model types.
+    /// This filter validates the attributes placed directly on action method parameters, and adds all the validation errors to the ModelState collection.
+    /// </remarks>
     public class ValidateActionParametersAttribute : ActionFilterAttribute
     {
+        public ValidateActionParametersAttribute()
+        {
+            Order = 1;
+        }
+
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             var descriptor = context.ActionDescriptor as ControllerActionDescriptor;
