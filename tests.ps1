@@ -10,7 +10,7 @@ $DNX = "dnx"
 $DNVM = "dnvm"
 
 # ensure the correct version
-& $DNVM install 1.0.0-rc1-update1
+& $DNVM install 1.0.0-rc1-update1 -r coreclr -a x86
 
 # use the correct version
 & $DNVM use 1.0.0-rc1-update1 -r coreclr -a x86
