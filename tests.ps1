@@ -13,7 +13,7 @@ $DNVM = "dnvm"
 & $DNVM install 1.0.0-rc1-update1
 
 # use the correct version
-& $DNVM use 1.0.0-rc1-update1
+& $DNVM use 1.0.0-rc1-update1 -r coreclr -a x64
 
 & $DNU restore "$TestsFolder"
 if (-not $?)
