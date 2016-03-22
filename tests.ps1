@@ -3,7 +3,7 @@ $PSScriptFilePath = (Get-Item $MyInvocation.MyCommand.Path).FullName
 " PSScriptFilePath = $PSScriptFilePath"
 
 $SolutionRoot = Split-Path -Path $PSScriptFilePath -Parent
-$TestsFolder = Join-Path -Path $SolutionRoot -ChildPath "tests/RestApiHelpers.Test";
+$TestsFolder = Join-Path -Path $SolutionRoot -ChildPath "test/RestApiHelpers.Test";
 
 $DNU = "dnu"
 $DNX = "dnx"
