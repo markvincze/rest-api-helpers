@@ -3,6 +3,7 @@
 
   "dependencies": {
     "xunit": "2.1.0",
+    "xunit.runner.dnx": "2.1.0-rc1-build204",
     "moq.netcore": "4.4.0-beta8",
     "RestApiHelpers": ""
   },
@@ -12,6 +13,6 @@
   },
 
   "frameworks": {
-    "dotnet5.4": { }
+    "dnxcore50": { }
   }
 }
