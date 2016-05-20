@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNet.Http;
-using Microsoft.AspNet.Mvc;
-using Microsoft.AspNet.Mvc.Filters;
-using Microsoft.AspNet.Mvc.ModelBinding;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Moq;
 using RestApiHelpers.Validation;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace RestApiHelpers.Test.Validation
 
             var modelStateDictionary = new ModelStateDictionary();
             var httpContext = new Mock<HttpContext>();
-            var actionContext = new ActionContext(httpContext.Object, new Microsoft.AspNet.Routing.RouteData(), new Microsoft.AspNet.Mvc.Abstractions.ActionDescriptor(), modelStateDictionary);
+            var actionContext = new ActionContext(httpContext.Object, new Microsoft.AspNetCore.Routing.RouteData(), new Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor(), modelStateDictionary);
             var actionExecutingContext = new ActionExecutingContext(
                 actionContext,
                 new List<IFilterMetadata>(),
@@ -38,7 +38,7 @@ namespace RestApiHelpers.Test.Validation
 
             var modelStateDictionary = new ModelStateDictionary();
             var httpContext = new Mock<HttpContext>();
-            var actionContext = new ActionContext(httpContext.Object, new Microsoft.AspNet.Routing.RouteData(), new Microsoft.AspNet.Mvc.Abstractions.ActionDescriptor(), modelStateDictionary);
+            var actionContext = new ActionContext(httpContext.Object, new Microsoft.AspNetCore.Routing.RouteData(), new Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor(), modelStateDictionary);
             var actionExecutingContext = new ActionExecutingContext(
                 actionContext,
                 new List<IFilterMetadata>(),
