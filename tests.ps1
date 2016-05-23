@@ -5,31 +5,23 @@ $PSScriptFilePath = (Get-Item $MyInvocation.MyCommand.Path).FullName
 $SolutionRoot = Split-Path -Path $PSScriptFilePath -Parent
 $TestsFolder = Join-Path -Path $SolutionRoot -ChildPath "test/RestApiHelpers.Test";
 
-$DNU = "dnu"
-$DNX = "dnx"
-$DNVM = "dnvm"
+$DOTNET = "dotnet"
 
-# ensure the correct version
-& $DNVM install 1.0.0-rc1-update1 -r coreclr -a x86
-
-# use the correct version
-& $DNVM use 1.0.0-rc1-update1 -r coreclr -a x86
-
-& $DNU restore "$TestsFolder"
+& $DOTNET restore "$TestsFolder"
 if (-not $?)
 {
-	throw "The DNU restore process returned an error code."
+	throw "The dotnet restore process returned an error code."
 }
 
-& $DNU build "$TestsFolder"
+& $DOTNET build "$TestsFolder"
 if (-not $?)
 {
-	throw "The DNU build process returned an error code."
+	throw "The dotnet build process returned an error code."
 }
 
 # run them
-& $DNX -p "$TestsFolder" test
+& $DOTNET test "$TestsFolder"
 if (-not $?)
 {
-	throw "The DNX test process returned an error code."
+	throw "The dotnet test process returned an error code."
 }
