@@ -9,6 +9,10 @@ param (
 	$PreReleaseName
 )
 
+Write-Output "Dotnet CLI version:"
+& dotnet --version
+Write-Output ""
+
 $PSScriptFilePath = (Get-Item $MyInvocation.MyCommand.Path).FullName
 
 " PSScriptFilePath = $PSScriptFilePath"
