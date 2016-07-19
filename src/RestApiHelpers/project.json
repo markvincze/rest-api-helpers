@@ -1,10 +1,10 @@
 ﻿{
-  "version": "1.4.0",
+  "version": "1.6.0",
   "authors": [ "Mark Vincze" ],
   "packOptions": {
     "owners": [ "mark.vincze" ],
     "tags": [ "ASP.NET", "REST" ],
-    "releaseNotes": "First release",
+    "releaseNotes": "Update to .NET Core RTM",
     "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
     "projectUrl": "https://github.com/markvincze/rest-api-helpers"
   },
