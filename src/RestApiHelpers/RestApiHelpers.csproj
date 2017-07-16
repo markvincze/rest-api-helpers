@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Collection of extensions for ASP.NET MVC helping implementing Rest Apis.</Description>
+    <Copyright>Copyright © Mark Vincze 2016</Copyright>
+    <VersionPrefix>1.7.0</VersionPrefix>
+    <Authors>Mark Vincze</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>RestApiHelpers</AssemblyName>
+    <PackageId>RestApiHelpers</PackageId>
+    <PackageTags>ASP.NET;REST</PackageTags>
+    <PackageReleaseNotes>Update to .NET Core RTM</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/markvincze/rest-api-helpers</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net45+win8</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Warmup\" />
+  </ItemGroup>
+
+</Project>
