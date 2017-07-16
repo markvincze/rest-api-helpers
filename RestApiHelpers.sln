@@ -1,22 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8F2D0E71-B355-4AD2-B52D-793E1B6DBD63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6AC957DF-CC44-4051-B1A6-0EBF6E449C98}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RestApiHelpers", "src\RestApiHelpers\RestApiHelpers.xproj", "{053E81CE-4E21-4DC6-A9C8-D8958C713ECF}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RestApiHelpers.Test", "test\RestApiHelpers.Test\RestApiHelpers.Test.xproj", "{DE848EDE-231E-48D0-94CA-943B4DE56EE1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{510D3964-6F72-434F-89F7-5D8C43FBDDAB}"
 	ProjectSection(SolutionItems) = preProject
-		build.ps1 = build.ps1
-		global.json = global.json
-		tests.ps1 = tests.ps1
+		appveyor.yml = appveyor.yml
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiHelpers", "src\RestApiHelpers\RestApiHelpers.csproj", "{053E81CE-4E21-4DC6-A9C8-D8958C713ECF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiHelpers.Test", "test\RestApiHelpers.Test\RestApiHelpers.Test.csproj", "{DE848EDE-231E-48D0-94CA-943B4DE56EE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
